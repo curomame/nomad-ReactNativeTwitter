@@ -29,7 +29,6 @@ const Auth = () => {
         } else {
         data = await signInWithEmailAndPassword(authService, email, password);
         }
-        console.log(data);
     } catch (error) {
       setError(error.message);
     }
@@ -51,6 +50,8 @@ const onSocialClick = async (event) => {
   if (name === "google") {
   provider = new GoogleAuthProvider();
   } else if (name === "github") {
+
+
   provider = new GithubAuthProvider();
   }
   await signInWithPopup(authService, provider);
