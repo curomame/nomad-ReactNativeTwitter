@@ -14,6 +14,7 @@ const Nweet = ({nweetObj, isOwner}) => {
     const ok = window.confirm("Are you sure?");  
     if (ok){
       await deleteDoc(NweetTextRef );
+      console.log(nweetObj.attachmentUrl)
         } else {
 
     }
@@ -34,20 +35,25 @@ const Nweet = ({nweetObj, isOwner}) => {
     const {target:{value}} = e;
     setNewNweet(value);
   } 
+
   return(
 
     <div>
 
     {editing ? 
     <>
-    <form onSubmit={onSubmit}>
+      { isOwner &&
+      <>
+      <form onSubmit={onSubmit}>
       <input onChange={onChange} type="text" placeholder="edit your nweet" value={newNweet}required/>
       <input type="submit" value="updated"></input>
       </form>
       
     <button onClick={toggleEditing}>Change</button>
+    </>}
     </> 
     : <h4>{nweetObj.text}</h4>}
+    {nweetObj.attachmentUrl && (<img src={nweetObj.attachmentUrl} width="50px" height="50px" alt="alt"/> )}
 
       {isOwner &&  (
       <>
