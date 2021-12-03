@@ -15,8 +15,8 @@ const Nweet = ({nweetObj, isOwner}) => {
   const onDeleteClick = async () => {
     const ok = window.confirm("Are you sure?");  
     if (ok){
-      await deleteDoc(NweetTextRef );
-      await deleteObject(urlRef)
+      await deleteDoc(NweetTextRef).then(await deleteObject(urlRef));
+      
         } else {
 
     }
