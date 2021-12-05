@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.js": "/curomame/nomad-ReactNativeTwitter.git/static/js/main.9a025932.chunk.js",
+    "main.js.map": "/curomame/nomad-ReactNativeTwitter.git/static/js/main.9a025932.chunk.js.map",
+    "runtime-main.js": "/curomame/nomad-ReactNativeTwitter.git/static/js/runtime-main.ab71bd29.js",
+    "runtime-main.js.map": "/curomame/nomad-ReactNativeTwitter.git/static/js/runtime-main.ab71bd29.js.map",
+    "static/js/2.8c9e36f1.chunk.js": "/curomame/nomad-ReactNativeTwitter.git/static/js/2.8c9e36f1.chunk.js",
+    "static/js/2.8c9e36f1.chunk.js.map": "/curomame/nomad-ReactNativeTwitter.git/static/js/2.8c9e36f1.chunk.js.map",
+    "index.html": "/curomame/nomad-ReactNativeTwitter.git/index.html",
+    "static/js/2.8c9e36f1.chunk.js.LICENSE.txt": "/curomame/nomad-ReactNativeTwitter.git/static/js/2.8c9e36f1.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ab71bd29.js",
+    "static/js/2.8c9e36f1.chunk.js",
+    "static/js/main.9a025932.chunk.js"
+  ]
+}
